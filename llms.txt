@@ -1,0 +1,32 @@
+# SideTap Wi-Fi / Personal Hotspot Guide
+
+> Chinese documentation for connecting a spare iPhone to an AI companion. Author credit: 电脑端的 Codex 阿澈. Upstream: ucsandman/SideTap by Wes Sander. Independent community documentation; no official endorsement.
+
+## Current status
+
+- Documentation and adaptation design only; no runnable wireless extension installer is included.
+- Verified topology: the controlled iPhone 13 hosts its cellular personal hotspot, and Windows connects over Wi-Fi.
+- Initial USB pairing/trust and WDA signing remain necessary.
+- Version-specific local workaround: netmuxd 0.4.3 plus a compatibility adapter for go-ios 1.3.2. The adapter adjusts pinned-device enumeration; it does not bypass pairing, TLS, signing, or system authorization.
+- Actual WDA and companion MCP calculator acceptance passed. Other phones are not fully validated.
+- QQ and contacting GPT succeeded according to the user; no private transcripts are included.
+- Large game stutter/timeouts were observed. Insufficient phone performance is the user's hypothesis, not a confirmed diagnosis.
+- Original USB dropout root cause is unresolved.
+
+## Documentation
+
+- [Tutorial](docs/tutorial.zh-CN.md): Windows setup, WDA signing/authorization, real control acceptance, wireless case, fault layers, renewal.
+- [Wireless compatibility](docs/wireless-compatibility.zh-CN.md): missing portable integration, network topologies, iPhone/iPad candidates and Android boundary, test checklist.
+- [Acceptance summary](evidence/acceptance-summary.json): sanitized facts with observed and user-reported results distinguished.
+- [Example config](examples/wireless.env.example): placeholders only; requires the unpublished local extension.
+- [Credits](CREDITS.md): original projects and documentation sources.
+
+## Social drafts
+
+- [Xiaohongshu post](social/xiaohongshu-post.zh-CN.md)
+- [Ten-page carousel copy](social/xiaohongshu-carousel.zh-CN.md)
+
+## License
+
+- [Tutorial MIT license](LICENSE)
+- [Original SideTap MIT license](third_party/SideTap-LICENSE.txt)

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-03",
+  "repository_status": "documentation_and_design_only",
+  "wireless_installer_included": false,
+  "author_credit": "电脑端的 Codex 阿澈",
+  "upstream": "https://github.com/ucsandman/SideTap",
+  "verified_setup": {
+    "phone": "iPhone 13",
+    "ios": "26.6",
+    "host": "Windows",
+    "go_ios": "1.3.2",
+    "netmuxd": "0.4.3",
+    "wda": "16.12.9",
+    "topology": "controlled_phone_hosts_personal_hotspot_pc_connects_over_wifi",
+    "initial_usb_pairing_required": true
+  },
+  "acceptance": [
+    {
+      "step": "local_calculator",
+      "expression": "7+1",
+      "display": "8",
+      "result": "passed"
+    },
+    {
+      "step": "after_idle",
+      "expression": "8+2",
+      "display": "10",
+      "idle_seconds_approx": 45,
+      "same_session": true,
+      "result": "passed"
+    },
+    {
+      "step": "overnight",
+      "result": "usable_next_day",
+      "continuous_gesture_test": false
+    },
+    {
+      "step": "actual_companion_mcp",
+      "expression": "10+3",
+      "display": "13",
+      "result": "passed"
+    },
+    {
+      "step": "qq_and_contacting_gpt",
+      "result": "success_reported_by_user",
+      "transcripts_published": false
+    }
+  ],
+  "limits": {
+    "other_device_full_control_test": "not_verified",
+    "iphone_17_usb_comparison_is_full_acceptance": false,
+    "large_game": "stutter_and_timeouts_observed_user_suspects_phone_performance_root_cause_unconfirmed",
+    "usb_dropout_root_cause": "unconfirmed",
+    "android_backend_included": false
+  }
+}

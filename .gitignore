@@ -1,0 +1,13 @@
+# This repository publishes documentation, not machine runtime state.
+.env
+.state/
+.venv/
+.tools/
+*.p12
+*.pfx
+*.mobileprovision
+*.pem
+*.key
+*.ipa
+*.log
+__pycache__/
